@@ -1,0 +1,8 @@
+.git
+.gitignore
+.github
+.next
+node_modules
+npm-debug.log*
+README.md
+public/home.png:Zone.Identifier
