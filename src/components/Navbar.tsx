@@ -28,10 +28,10 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-black text-[#1f1f25] hover:text-[#023059] transition-colors"
+          className="text-5xl font-black text-[#1f1f25] hover:text-[#023059] transition-colors"
           style={{ fontFamily: 'var(--font-montserrat)' }}
         >
-          HW
+          WB
         </Link>
 
         {/* Desktop Menu */}

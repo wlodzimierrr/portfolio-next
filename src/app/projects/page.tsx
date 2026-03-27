@@ -1,4 +1,4 @@
-import { Navbar, Hero, ProjectCard, Footer } from '@/components';
+import { Navbar, ProjectCard, Footer } from '@/components';
 
 export const metadata = {
   title: 'Projects | Portfolio',
@@ -48,12 +48,6 @@ export default function Projects() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
-
-      <Hero
-        title="Featured Projects"
-        subtitle="My Work"
-        description="A selection of recent projects showcasing my approach to design and development."
-      />
 
       <section className="py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">

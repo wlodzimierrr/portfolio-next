@@ -1,4 +1,4 @@
-import { Navbar, Hero, Footer } from '@/components';
+import { Navbar, Footer } from '@/components';
 
 export const metadata = {
   title: 'About | Portfolio',
@@ -9,12 +9,6 @@ export default function About() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
-
-      <Hero
-        title="About Me"
-        subtitle="Get to Know Me"
-        description="Designer and developer with a passion for creating beautiful, functional digital experiences."
-      />
 
       <section className="py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

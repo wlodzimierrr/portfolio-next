@@ -17,7 +17,7 @@ export default function Home() {
       description:
         'Modern e-commerce solution with advanced filtering, personalized recommendations, and seamless checkout. Built with performance and conversion optimization in mind.',
       tags: ['Development', 'React', 'Commerce'],
-      image: 'https://images.unsplash.com/photo-1460925895917-adf4e2d7c0f0?w=1200&h=600&fit=crop',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop',
       href: '#',
     },
     {
@@ -37,7 +37,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero
-        title="Bold ideas for modern digital."
+        title={<>Building strength through data, <br />code  & systems.</>}
+        showImage
         cta={{ label: 'View Work', href: '#projects' }}
       />
 
