@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { SectionHeading } from './SectionHeading';
 import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
@@ -28,7 +29,7 @@ export function About() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.p className="text-lg leading-relaxed" variants={staggerItem}>
-                I'm a creative developer and designer passionate about building elegant digital
+                I&apos;m a creative developer and designer passionate about building elegant digital
                 products that solve real problems. With a background in both design and engineering,
                 I bridge the gap between aesthetics and functionality.
               </motion.p>
@@ -40,9 +41,9 @@ export function About() {
               </motion.p>
 
               <motion.p className="text-lg leading-relaxed" variants={staggerItem}>
-                When I'm not designing or coding, you'll find me exploring new tools, reading about
+                When I&apos;m not designing or coding, you&apos;ll find me exploring new tools, reading about
                 typography and motion design, or working on experimental projects that push the
-                boundaries of what's possible on the web.
+                boundaries of what&apos;s possible on the web.
               </motion.p>
             </motion.div>
 
@@ -75,10 +76,12 @@ export function About() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
               alt="About"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </motion.div>

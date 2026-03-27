@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Navbar, Footer } from '@/components';
 
 export const metadata = {
@@ -16,21 +17,23 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">My Story</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                I'm a creative professional with over 8 years of experience in design and web development. My journey started with a passion for building beautiful interfaces and has evolved into a deep commitment to understanding user needs.
+                I&apos;m a creative professional with over 8 years of experience in design and web development. My journey started with a passion for building beautiful interfaces and has evolved into a deep commitment to understanding user needs.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 I believe that great design is invisible—it guides users naturally toward their goals while maintaining an elegant, enjoyable experience. Every project is an opportunity to solve real problems and deliver lasting value.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                When I'm not designing or coding, you'll find me exploring new design trends, contributing to open-source projects, or collaborating with talented teams on innovative ideas.
+                When I&apos;m not designing or coding, you&apos;ll find me exploring new design trends, contributing to open-source projects, or collaborating with talented teams on innovative ideas.
               </p>
             </div>
 
-            <div className="bg-gray-100 rounded-lg aspect-square flex items-center justify-center">
-              <img
+            <div className="relative bg-gray-100 rounded-lg aspect-square overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80"
                 alt="Profile"
-                className="w-full h-full object-cover rounded-lg"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover rounded-lg"
               />
             </div>
           </div>

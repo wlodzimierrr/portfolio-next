@@ -65,7 +65,7 @@ export default function Projects() {
             Have a project in mind?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Let's discuss how I can help bring your vision to life.
+            Let&apos;s discuss how I can help bring your vision to life.
           </p>
           <a
             href="/contact"

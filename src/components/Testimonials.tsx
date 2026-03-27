@@ -61,7 +61,7 @@ export function Testimonials() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.1 }}
               >
-                "
+                &ldquo;
               </motion.div>
 
               {/* Quote */}

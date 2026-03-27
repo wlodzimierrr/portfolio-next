@@ -72,7 +72,7 @@ export default function Contact() {
 
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-8">Let's Connect</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-8">Let&apos;s Connect</h2>
 
               <div className="space-y-8">
                 <div>

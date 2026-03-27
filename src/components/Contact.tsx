@@ -21,7 +21,7 @@ export function Contact() {
           <motion.div className="mb-6 flex items-center justify-center gap-2" variants={heroStagger.item}>
             <div className="w-8 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
             <span className="text-xs font-semibold text-amber-500 uppercase tracking-widest">
-              Let's work together
+              Let&apos;s work together
             </span>
             <div className="w-8 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
           </motion.div>
@@ -39,8 +39,8 @@ export function Contact() {
             className="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed"
             variants={heroStagger.item}
           >
-            I'm always interested in hearing about interesting projects and creative collaborations.
-            Let's start a conversation about what you're building.
+            I&apos;m always interested in hearing about interesting projects and creative collaborations.
+            Let&apos;s start a conversation about what you&apos;re building.
           </motion.p>
 
           {/* CTA Buttons */}
