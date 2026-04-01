@@ -60,7 +60,7 @@ jobs:
     env:
       GITOPS_REPO: wlodzimierrr/homelab-workloads
       SERVICE_ID: portfolio-next
-      IMAGE_REPO: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      IMAGE_REPO: ghcr.io/wlodzimierrr/portfolio-next
       TARGET_TAG: sha-${{ github.sha }}
       PORTAL_DEPLOYMENT_API_URL: ${{ secrets.PORTAL_DEPLOYMENT_API_URL }}
       PORTAL_DEPLOYMENT_API_TOKEN: ${{ secrets.PORTAL_DEPLOYMENT_API_TOKEN }}
