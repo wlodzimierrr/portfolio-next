@@ -15,8 +15,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "WR | Designer & Developer",
-  description: "Modern personal portfolio featuring bold editorial design, premium projects, and strategic thinking.",
+  title: "WB | Data & Platform Technologist",
+  description:
+    "Portfolio showcasing data analytics, BI dashboards, software engineering, machine learning, and cloud-native platform projects.",
 };
 
 export default function RootLayout({

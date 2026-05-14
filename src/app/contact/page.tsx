@@ -78,20 +78,20 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Email</h3>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:mr.wojciech.bak@gmail.com"
                     className="text-blue-600 hover:text-blue-700 transition-colors"
                   >
-                    hello@example.com
+                    mr.wojciech.bak@gmail.com
                   </a>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Phone</h3>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+447842503730"
                     className="text-blue-600 hover:text-blue-700 transition-colors"
                   >
-                    +1 (234) 567-890
+                    +44 7842 503730
                   </a>
                 </div>
 
@@ -100,8 +100,8 @@ export default function Contact() {
                   <div className="space-y-2">
                     {[
                       { label: 'Twitter', href: '#' },
-                      { label: 'LinkedIn', href: '#' },
-                      { label: 'GitHub', href: '#' },
+                      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/wojciech-b-4b1450244/' },
+                      { label: 'GitHub', href: 'https://github.com/wlodzimierrr' },
                     ].map((link) => (
                       <a
                         key={link.label}
@@ -117,7 +117,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Location</h3>
                   <p className="text-gray-600">
-                    San Francisco, CA<br />
+                    Southampton, UK<br />
+                    Lublin, PL<br />
                     Available for remote projects worldwide
                   </p>
                 </div>

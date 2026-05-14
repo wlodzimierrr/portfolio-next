@@ -26,10 +26,10 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-2">
             <h3 className="text-xs font-black uppercase tracking-widest text-[#f5f5f5]">
-              WR
+              WB
             </h3>
             <p className="text-sm text-[#999999] leading-relaxed">
-              Designer & developer crafting modern digital experiences.
+              Building data products, software systems and cloud platforms for real-world business problems.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export function Footer() {
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <p className="text-xs text-[#666666]">
-              © {currentYear} WR. All rights reserved.
+              © {currentYear} wlodzimierrr. All rights reserved.
             </p>
             <p className="text-xs text-[#666666]">
               Built with Next.js, TypeScript, Tailwind CSS & Framer Motion.
