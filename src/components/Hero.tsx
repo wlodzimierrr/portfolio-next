@@ -31,45 +31,24 @@ const itemVariants = {
 export function Hero({ title, description, showImage = false, cta }: HeroProps) {
   return (
     <section
-      className="relative w-full overflow-hidden"
-      style={{ height: '100vh', backgroundColor: '#ffffff' }}
+      className="relative w-full overflow-hidden bg-white min-h-[calc(100vh-90px)] lg:h-screen"
     >
-      {/* Barbell — home page only */}
-      {showImage && <motion.div
-        className="absolute right-[-120px] top-1/2 -translate-y-[42%]"
-        style={{ width: 'clamp(620px, 48vw, 980px)' }}
-        initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
-      >
-        <Image
-          src="/home.png"
-          alt="Barbell"
-          width={1600}
-          height={900}
-          priority
-          className="w-full h-auto block"
-        />
-      </motion.div>}
-
       {/* Text — left side */}
-      <div className="relative z-10 h-full flex items-center" style={{ paddingLeft: '10%', paddingBottom: '20%' }}>
+      <div className="relative z-10 flex flex-col px-10 pb-2 pt-14 sm:px-14 sm:pt-16 lg:h-full lg:justify-center lg:px-0 lg:pb-[20%] lg:pl-[10%] lg:pt-0">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col"
-          style={{ maxWidth: '60%' }}
+          className="flex max-w-[640px] flex-col lg:max-w-[60%]"
         >
           <motion.h1
             variants={itemVariants}
-            className="font-black uppercase text-[#0a0a0a]"
+            className="font-black uppercase text-[#0a0a0a] text-[clamp(34px,10.5vw,44px)] lg:text-[clamp(44px,4.5vw,72px)]"
             style={{
               fontFamily: 'var(--font-montserrat)',
-              fontSize: 'clamp(44px, 4.5vw, 72px)',
               fontWeight: 800,
               lineHeight: 1.08,
-              letterSpacing: '-0.02em',
+              letterSpacing: 0,
               marginBottom: '28px',
             }}
           >
@@ -124,6 +103,23 @@ export function Hero({ title, description, showImage = false, cta }: HeroProps) 
           )}
         </motion.div>
       </div>
+
+      {/* Barbell — home page only */}
+      {showImage && <motion.div
+        className="pointer-events-none relative z-0 -mx-10 mt-10 w-[calc(100%+5rem)] sm:-mx-16 sm:w-[calc(100%+8rem)] lg:absolute lg:right-[-120px] lg:top-1/2 lg:mt-0 lg:w-[clamp(620px,48vw,980px)] lg:-translate-y-[42%]"
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
+        <Image
+          src="/home.png"
+          alt="Barbell"
+          width={1600}
+          height={900}
+          priority
+          className="block h-auto w-full"
+        />
+      </motion.div>}
     </section>
   );
 }

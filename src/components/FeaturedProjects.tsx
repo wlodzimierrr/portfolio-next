@@ -77,7 +77,7 @@ export function FeaturedProjects({
             >
               {/* Image */}
               <motion.div
-                className={`relative w-full h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg shadow-md group ${
+                className={`w-full h-[300px] overflow-hidden rounded-lg shadow-md group ${
                   index % 2 === 1 ? 'lg:col-start-2' : ''
                 }`}
                 whileHover={{ scale: 1.02 }}
@@ -86,8 +86,9 @@ export function FeaturedProjects({
                 <Image
                   src={project.image}
                   alt={project.title}
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  width={1200}
+                  height={300}
+                  className="w-full h-[300px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Overlay accent */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -143,6 +144,5 @@ export function FeaturedProjects({
     </section>
   );
 }
-
 
 
