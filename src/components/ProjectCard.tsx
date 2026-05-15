@@ -21,6 +21,7 @@ export function ProjectCard({
   link = '#',
 }: ProjectCardProps) {
   const delay = index * 0.1;
+  const isExternalLink = link.startsWith('http');
 
   return (
     <motion.div
@@ -30,7 +31,12 @@ export function ProjectCard({
       transition={{ duration: 0.5, delay }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <Link href={link} className="block h-full">
+      <Link
+        href={link}
+        className="block h-full"
+        target={isExternalLink ? '_blank' : undefined}
+        rel={isExternalLink ? 'noopener noreferrer' : undefined}
+      >
         {/* Image Container */}
         <div className="relative w-full h-48 sm:h-56 overflow-hidden bg-gray-100">
           <motion.img

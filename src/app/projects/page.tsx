@@ -19,7 +19,7 @@ export default function Projects() {
                 key={project.slug}
                 {...project}
                 index={index}
-                link={`/projects/${project.slug}`}
+                link={project.githubUrl}
               />
             ))}
           </div>
