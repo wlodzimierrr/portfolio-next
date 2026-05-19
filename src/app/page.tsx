@@ -9,7 +9,7 @@ const projects = [
       'Econometric analysis of UK firm profitability using Python and Stata, with regression modelling, diagnostics, and business-focused insights.',
     tags: ['Python', 'Stata', 'Econometrics', 'Data Analysis'],
     image: '/analysis.png',
-    href: 'https://github.com/wlodzimierrr/UK-Firm-Profitability-Analysis',
+    href: 'https://github.com/wlodzimierrr/econometrics',
   },
   {
     id: '2',
